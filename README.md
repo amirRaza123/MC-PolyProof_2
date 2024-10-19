@@ -16,7 +16,7 @@ The Logic Circuit project demonstrates how to create a basic logic circuit in Ci
 
 ### Installation
 
-1. Clone the repository into gitpos:
+1. Clone the guide repository in gitpod:
    ```bash
    git clone https://github.com/gmchad/zardkat.git
    ```
@@ -26,7 +26,7 @@ The Logic Circuit project demonstrates how to create a basic logic circuit in Ci
    npm i
    ```
 
-Create a file named `circuit.circom` .
+Update a file named `circuit.circom` .
 ```
 
 ### Implementing the Circuit
