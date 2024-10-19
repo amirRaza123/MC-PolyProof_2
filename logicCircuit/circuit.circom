@@ -13,9 +13,9 @@ template LogicCircuit () {
    signal intermediateY;
    
    // Component gates
-   component gateAnd = ANDGate();
-   component gateNot = NOTGate();
-   component gateOr = ORGate();
+   component gateAnd = AND();
+   component gateNot = NOT();
+   component gateOr = OR();
    
    // Circuit logic
    gateAnd.a <== a;
@@ -28,7 +28,7 @@ template LogicCircuit () {
    Q <== gateOr.out;
 }
 
-template ANDGate() {
+template AND() {
     signal input a;
     signal input b;
     signal output out;
@@ -36,14 +36,14 @@ template ANDGate() {
     out <== a * b;
 }
 
-template NOTGate() {
+template NOT() {
     signal input in;
     signal output out;
 
     out <== 1 - in;
 }
 
-template ORGate() {
+template OR() {
     signal input a;
     signal input b;
     signal output out;
