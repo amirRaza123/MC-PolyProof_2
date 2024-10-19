@@ -13,9 +13,19 @@ process.env.BASE_PATH = __dirname;
 import "./tasks/newcircuit.ts"
 
 const config: HardhatUserConfig = {
+  solidity: {
+    compilers: [
+      {
+        version: "0.8.17",
+      },
+      {
+        version: "0.6.11",
+      }
+    ]
+  },
   networks:{
     amoy: {
-    url: 'https://polygon-amoy.g.alchemy.com/v2/ZJJZ8JNzxwXtd2MTdHzlcnVVzWF_iQdC', 
+    url: 'https://polygon-amoy.g.alchemy.com/v2/ZEEPmAA0UcTjo23d1VzpgQ89qk3e_peR', 
     accounts: [process.env.PRIVATE_KEY],
   }
 },
