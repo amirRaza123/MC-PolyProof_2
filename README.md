@@ -16,7 +16,7 @@ The Logic Circuit project demonstrates how to create a basic logic circuit in Ci
 
 ### Installation
 
-1. Clone the guide repository in gitpod:
+1. Clone the guide repository:
    ```bash
    git clone https://github.com/gmchad/zardkat.git
    ```
